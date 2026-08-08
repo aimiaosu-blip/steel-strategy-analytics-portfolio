@@ -1,0 +1,2 @@
+-- SQLite schema is materialized in data/steel_strategy.sqlite by scripts/rebuild.py.
+CREATE TABLE weekly_market(week_start TEXT PRIMARY KEY, hrc_usd_t REAL, rebar_usd_t REAL, iron_ore_usd_t REAL, coking_coal_usd_t REAL, scrap_usd_t REAL, crude_steel_output_mt REAL, apparent_demand_mt REAL, exports_mt REAL, bf_bof_cost_usd_t REAL, eaf_cost_usd_t REAL, blended_cost_usd_t REAL, hrc_margin_usd_t REAL, is_synthetic INTEGER);

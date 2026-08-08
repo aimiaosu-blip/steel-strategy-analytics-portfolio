@@ -1,0 +1,4 @@
+scenario,demand_cagr,supply_cagr,price_elasticity,cost_inflation,eaf_share_2030
+Downside,-0.025,-0.012,0.55,0.01,0.2
+Base,-0.01,-0.008,0.65,0.015,0.23
+Upside,0.005,-0.004,0.75,0.02,0.26
