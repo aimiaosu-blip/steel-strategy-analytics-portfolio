@@ -2,9 +2,9 @@
 
 > Independent portfolio by **Aimiao Su** — synthetic market economics, cited public industry context, and no confidential company data.
 
-An end-to-end strategy case tailored to a Corporate Strategy Analyst internship: recurring China steel/commodity updates, raw-material economics, a 2025–2030 scenario model, public competitor intelligence, a policy special topic, Excel, SQL, an editable executive deck, and a browser dashboard.
+An end-to-end strategy case tailored to a Corporate Strategy Analyst internship: recurring China steel/commodity updates, raw-material economics, a 2025–2030 scenario model, public competitor intelligence, a policy special topic, Excel, SQL, an editable executive deck, and a published Tableau dashboard.
 
-**中文导航：** 这是一个面向钢铁行业战略分析岗位的独立作品集。核心内容包括周/月度市场跟踪、原材料成本与钢材利润桥、2025–2030 情景模型、主要中国钢企公开信息对标、产业政策专题、Excel 模型、SQL、交互式网页仪表盘和英文汇报材料。所有市场序列与预测结果均为合成数据。
+**中文导航：** 这是一个面向钢铁行业战略分析岗位的独立作品集。核心内容包括周/月度市场跟踪、原材料成本与钢材利润桥、2025–2030 情景模型、主要中国钢企公开信息对标、产业政策专题、Excel 模型、SQL、Tableau Public 交互式仪表盘和英文汇报材料。所有市场序列与预测结果均为合成数据。
 
 ## Live interactive dashboards
 
