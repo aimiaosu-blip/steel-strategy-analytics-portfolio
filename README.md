@@ -6,11 +6,17 @@ An end-to-end strategy case tailored to a Corporate Strategy Analyst internship:
 
 **中文导航：** 这是一个面向钢铁行业战略分析岗位的独立作品集。核心内容包括周/月度市场跟踪、原材料成本与钢材利润桥、2025–2030 情景模型、主要中国钢企公开信息对标、产业政策专题、Excel 模型、SQL、交互式网页仪表盘和英文汇报材料。所有市场序列与预测结果均为合成数据。
 
+## Live interactive dashboard
+
+**[Open China Steel Strategy Monitor →](https://aimiaosu-blip.github.io/steel-strategy-analytics-portfolio/)**
+
+No installation is required. Recruiters can open the dashboard directly in a browser.
+
 ## 60-second walkthrough
 
 | Time | Open | What it demonstrates |
 |---:|---|---|
-| 0–10s | [`dashboard/index.html`](dashboard/index.html) | Executive-first market, margin, scenario and competitor monitoring |
+| 0–10s | **[Live dashboard](https://aimiaosu-blip.github.io/steel-strategy-analytics-portfolio/)** | Executive-first market, margin, scenario and competitor monitoring |
 | 10–25s | [`workbook/china_steel_strategy_model.xlsx`](workbook/china_steel_strategy_model.xlsx) | Visible assumptions, Excel formulas, native charts and QC |
 | 25–40s | [`deck/china_steel_strategy_brief.pdf`](deck/china_steel_strategy_brief.pdf) | 13-slide consulting-style storyline and recommendations |
 | 40–50s | [`sql/analysis_queries.sql`](sql/analysis_queries.sql) | Weekly/monthly updates, scenarios and competitor queries |
