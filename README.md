@@ -17,7 +17,7 @@ No installation is required. Recruiters can open the dashboard directly in a bro
 | Time | Open | What it demonstrates |
 |---:|---|---|
 | 0–10s | **[Live dashboard](https://aimiaosu-blip.github.io/steel-strategy-analytics-portfolio/)** | Executive-first market, margin, scenario and competitor monitoring |
-| 10–25s | [`workbook/china_steel_strategy_model.xlsx`](workbook/china_steel_strategy_model.xlsx) | Visible assumptions, Excel formulas, native charts and QC |
+| 10–25s | [`workbook/china_steel_strategy_model.xlsx`](workbook/china_steel_strategy_model.xlsx) | Visible assumptions, Excel formulas, a native PivotTable, PivotChart and QC |
 | 25–40s | [`deck/china_steel_strategy_brief.pdf`](deck/china_steel_strategy_brief.pdf) | 13-slide consulting-style storyline and recommendations |
 | 40–50s | [`sql/analysis_queries.sql`](sql/analysis_queries.sql) | Weekly/monthly updates, scenarios and competitor queries |
 | 50–60s | [`docs/MICRO_ECONOMICS_MODEL.md`](docs/MICRO_ECONOMICS_MODEL.md) | Supply-demand logic, cost bridge, sensitivities and limitations |
@@ -37,7 +37,7 @@ No installation is required. Recruiters can open the dashboard directly in a bro
 | Weekly/monthly market updates | 104-week dataset, monthly BI extract, SQL update queries and dashboard |
 | Micro-economics modeling | Assumption-led demand/supply, price response, route cost, margin and EAF sensitivities |
 | China producer comparison | Six public-source profiles and ranked 2024 output comparison |
-| Advanced Excel | Structured source table, editable assumptions, formulas, QC and native charts |
+| Advanced Excel | Structured source table, editable assumptions, formulas, native PivotTable/PivotChart, QC and native charts |
 | Executive communication | Editable [PowerPoint](deck/china_steel_strategy_brief.pptx) and [PDF preview](deck/china_steel_strategy_brief.pdf) |
 | BI readiness | Import-ready CSVs plus [BI handoff](docs/BI_HANDOFF.md) |
 | Detail orientation | Deterministic seed, SQLite model, SQL tests, workbook checks and CI |
@@ -86,7 +86,7 @@ sqlite3 data/steel_strategy.sqlite < sql/analysis_queries.sql
 - Fixed seed: `20260809`; 104 weekly observations and 18 scenario-year outputs.
 - Synthetic series are calibrated only to plausible public-industry ranges and are never presented as actual quotes, forecasts or employer achievements.
 - Competitor tonnage is public-source factual context; model economics remain synthetic.
-- The Excel file uses formula-backed pivot-style summaries and native charts. The authoring environment does **not** create genuine PivotTable cache objects, so no real PivotTable object is claimed.
+- The Excel workbook includes a genuine native PivotTable and PivotChart built from the structured weekly market table, using a formula-backed month field for recurring monthly averages.
 - The PowerPoint uses editable native charts/tables and does **not** contain proprietary think-cell objects.
 - Static HTML is file-refresh based, not a live market feed. Tableau/Power BI can import the supplied CSVs.
 
