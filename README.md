@@ -6,17 +6,19 @@ An end-to-end strategy case tailored to a Corporate Strategy Analyst internship:
 
 **中文导航：** 这是一个面向钢铁行业战略分析岗位的独立作品集。核心内容包括周/月度市场跟踪、原材料成本与钢材利润桥、2025–2030 情景模型、主要中国钢企公开信息对标、产业政策专题、Excel 模型、SQL、交互式网页仪表盘和英文汇报材料。所有市场序列与预测结果均为合成数据。
 
-## Live interactive dashboard
+## Live interactive dashboards
 
-**[Open China Steel Strategy Monitor →](https://aimiaosu-blip.github.io/steel-strategy-analytics-portfolio/)**
+**[Open the Tableau Public dashboard →](https://public.tableau.com/app/profile/aimiao.su/viz/Chinasteelstrategy/ChinaSteelStrategyMonitor)**
 
-No installation is required. Recruiters can open the dashboard directly in a browser.
+Published Tableau workbook with KPI cards, monthly price–cost–margin monitoring, a 2025–2030 scenario outlook and a China producer benchmark.
+
+[Open the lightweight browser dashboard](https://aimiaosu-blip.github.io/steel-strategy-analytics-portfolio/) · [Download the packaged Tableau workbook (.twbx)](https://github.com/aimiaosu-blip/steel-strategy-analytics-portfolio/raw/refs/heads/main/tableau/China%20steel%20strategy.twbx)
 
 ## 60-second walkthrough
 
 | Time | Open | What it demonstrates |
 |---:|---|---|
-| 0–10s | **[Live dashboard](https://aimiaosu-blip.github.io/steel-strategy-analytics-portfolio/)** | Executive-first market, margin, scenario and competitor monitoring |
+| 0–10s | **[Tableau Public dashboard](https://public.tableau.com/app/profile/aimiao.su/viz/Chinasteelstrategy/ChinaSteelStrategyMonitor)** | KPI cards, monthly trends, scenario range and producer benchmark |
 | 10–25s | [`workbook/china_steel_strategy_model.xlsx`](workbook/china_steel_strategy_model.xlsx) | Visible assumptions, Excel formulas, a native PivotTable, PivotChart and QC |
 | 25–40s | [`deck/china_steel_strategy_brief.pdf`](deck/china_steel_strategy_brief.pdf) | 13-slide consulting-style storyline and recommendations |
 | 40–50s | [`sql/analysis_queries.sql`](sql/analysis_queries.sql) | Weekly/monthly updates, scenarios and competitor queries |
@@ -39,7 +41,7 @@ No installation is required. Recruiters can open the dashboard directly in a bro
 | China producer comparison | Six public-source profiles and ranked 2024 output comparison |
 | Advanced Excel | Structured source table, editable assumptions, formulas, native PivotTable/PivotChart, QC and native charts |
 | Executive communication | Editable [PowerPoint](deck/china_steel_strategy_brief.pptx) and [PDF preview](deck/china_steel_strategy_brief.pdf) |
-| BI readiness | Import-ready CSVs plus [BI handoff](docs/BI_HANDOFF.md) |
+| BI readiness | Published [Tableau Public dashboard](https://public.tableau.com/app/profile/aimiao.su/viz/Chinasteelstrategy/ChinaSteelStrategyMonitor), downloadable [.twbx workbook](https://github.com/aimiaosu-blip/steel-strategy-analytics-portfolio/raw/refs/heads/main/tableau/China%20steel%20strategy.twbx), import-ready CSVs and [BI handoff](docs/BI_HANDOFF.md) |
 | Detail orientation | Deterministic seed, SQLite model, SQL tests, workbook checks and CI |
 
 ## Visual preview
@@ -52,6 +54,7 @@ No installation is required. Recruiters can open the dashboard directly in a bro
 
 ```text
 dashboard/      self-contained offline HTML dashboard
+tableau/        published Tableau packaged workbook
 data/raw/       synthetic weekly inputs + public competitor table
 data/processed/ monthly and scenario BI-ready extracts
 data/           ready-to-query SQLite database
@@ -88,6 +91,7 @@ sqlite3 data/steel_strategy.sqlite < sql/analysis_queries.sql
 - Competitor tonnage is public-source factual context; model economics remain synthetic.
 - The Excel workbook includes a genuine native PivotTable and PivotChart built from the structured weekly market table, using a formula-backed month field for recurring monthly averages.
 - The PowerPoint uses editable native charts/tables and does **not** contain proprietary think-cell objects.
+- The published Tableau dashboard and packaged workbook use the repository's disclosed synthetic and public-context datasets.
 - Static HTML is file-refresh based, not a live market feed. Tableau/Power BI can import the supplied CSVs.
 
 ## Sources
